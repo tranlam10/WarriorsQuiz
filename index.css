@@ -1,0 +1,140 @@
+/******************/
+/*Background Image*/
+/******************/
+html {
+    background-image: url("warriors_logo.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/****************************/
+/*Styling Question and Score*/
+/****************************/
+
+header {
+    height: 80px;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    padding: 15px;
+}
+
+#question {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+#score {
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+
+}
+
+/**************************/
+/*Starting Page and Button*/
+/**************************/
+
+.startBox {
+    border: 2px solid black;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 1em;
+    margin: auto;
+    background-color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.startButton, .submitAnswer, .nextButton, .restartQuiz {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin: 25px;
+}
+
+.startButton:hover, .submitAnswer:hover, .nextButton:hover, .restartQuiz:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+}
+
+.questionBox {
+    box-sizing: border-box;
+    display: none;
+    border: 5px solid black;
+    width: 100%;
+    font-size: 0.75em;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media only screen and (min-width: 600px) {
+    .questionBox {
+        box-sizing: border-box;
+        display: none;
+        border: 5px solid black;
+        width: 50%;
+        font-size: 1em;
+        padding: 30px;
+        background-color: white;
+        margin: auto;
+        margin-bottom: 40px;
+        font-family: 'Roboto Mono', monospace;
+    }
+}
+
+/**************************/
+/*Question Box and Answers*/
+/**************************/
+
+label {
+    border: 1px solid black;
+    display: block;
+    margin-bottom: 25px;
+}
+
+label:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.swish, .wrong {
+    padding: 20px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+legend {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 0;
+}
+
+
